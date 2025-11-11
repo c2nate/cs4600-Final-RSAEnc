@@ -15,9 +15,9 @@ def generate_rsa_keys():
     with open("private_key.pem", "wb") as f:
         f.write(
             private_key.private_bytes(
-                encoding=serialization.Encoding.PEM,  # Format: PEM (Privacy-Enhanced Mail)
+                encoding=serialization.Encoding.PEM,  # Format: PEM 
                 format=serialization.PrivateFormat.PKCS8,  # Private key standard
-                encryption_algorithm=serialization.NoEncryption()  # No encryption on the file
+                encryption_algorithm=serialization.NoEncryption() 
             )
         )
 
@@ -35,3 +35,4 @@ def generate_rsa_keys():
 # Main function to generate keys when this script is run directly.
 if __name__ == "__main__":
     generate_rsa_keys()
+
